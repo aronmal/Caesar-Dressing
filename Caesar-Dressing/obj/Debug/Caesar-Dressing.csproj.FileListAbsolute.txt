@@ -1,0 +1,11 @@
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\bin\Debug\Caesar-Dressing.exe.config
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\bin\Debug\Caesar-Dressing.exe
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\bin\Debug\Caesar-Dressing.pdb
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\obj\Debug\Caesar-Dressing.csproj.AssemblyReference.cache
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\obj\Debug\Caesar-Dressing.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\obj\Debug\Caesar_Dressing.Form1.resources
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\obj\Debug\Caesar_Dressing.Properties.Resources.resources
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\obj\Debug\Caesar-Dressing.csproj.GenerateResource.cache
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\obj\Debug\Caesar-Dressing.csproj.CoreCompileInputs.cache
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\obj\Debug\Caesar-Dressing.exe
+C:\Users\Aron\Documents\Github\Caesar-Dressing\Caesar-Dressing\obj\Debug\Caesar-Dressing.pdb

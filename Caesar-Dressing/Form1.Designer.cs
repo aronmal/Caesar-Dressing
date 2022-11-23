@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbx_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -50,12 +50,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbx_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.tbx_name.Location = new System.Drawing.Point(136, 40);
+            this.tbx_name.Name = "tbx_name";
+            this.tbx_name.Size = new System.Drawing.Size(100, 20);
+            this.tbx_name.TabIndex = 0;
             // 
             // label1
             // 
@@ -75,6 +75,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Einlesen";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -235,7 +236,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbx_name);
             this.Name = "Form1";
             this.Text = "Caesar-Dressing";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -247,7 +248,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbx_name;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
