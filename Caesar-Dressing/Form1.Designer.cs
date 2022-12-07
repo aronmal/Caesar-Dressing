@@ -30,15 +30,15 @@
         {
             this.tbx_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.einlesen = new System.Windows.Forms.Button();
+            this.split = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buchstabieren = new System.Windows.Forms.Button();
+            this.count = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -47,6 +47,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.schti = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,26 +66,26 @@
             this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Vollständiger Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // einlesen
             // 
-            this.button1.Location = new System.Drawing.Point(265, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Einlesen";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.einlesen.Location = new System.Drawing.Point(265, 38);
+            this.einlesen.Name = "einlesen";
+            this.einlesen.Size = new System.Drawing.Size(75, 23);
+            this.einlesen.TabIndex = 2;
+            this.einlesen.Text = "Einlesen";
+            this.einlesen.UseVisualStyleBackColor = true;
+            this.einlesen.Click += new System.EventHandler(this.einlesen_Click);
             // 
-            // button2
+            // split
             // 
-            this.button2.Location = new System.Drawing.Point(265, 91);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "SPLIT!";
-            this.button2.UseVisualStyleBackColor = true;
+            this.split.Location = new System.Drawing.Point(265, 91);
+            this.split.Name = "split";
+            this.split.Size = new System.Drawing.Size(75, 23);
+            this.split.TabIndex = 5;
+            this.split.Text = "SPLIT!";
+            this.split.UseVisualStyleBackColor = true;
+            this.split.Click += new System.EventHandler(this.split_Click);
             // 
             // label2
             // 
@@ -110,7 +111,6 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "Verschlüsseln";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
@@ -120,7 +120,6 @@
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Nachnahme";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox3
             // 
@@ -129,23 +128,25 @@
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 6;
             // 
-            // button4
+            // buchstabieren
             // 
-            this.button4.Location = new System.Drawing.Point(93, 369);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 23);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Buchstabieren";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buchstabieren.Location = new System.Drawing.Point(93, 369);
+            this.buchstabieren.Name = "buchstabieren";
+            this.buchstabieren.Size = new System.Drawing.Size(87, 23);
+            this.buchstabieren.TabIndex = 9;
+            this.buchstabieren.Text = "Buchstabieren";
+            this.buchstabieren.UseVisualStyleBackColor = true;
+            this.buchstabieren.Click += new System.EventHandler(this.buchstabieren_Click);
             // 
-            // button5
+            // count
             // 
-            this.button5.Location = new System.Drawing.Point(220, 369);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Zählen1234";
-            this.button5.UseVisualStyleBackColor = true;
+            this.count.Location = new System.Drawing.Point(220, 369);
+            this.count.Name = "count";
+            this.count.Size = new System.Drawing.Size(75, 23);
+            this.count.TabIndex = 10;
+            this.count.Text = "Zählen";
+            this.count.UseVisualStyleBackColor = true;
+            this.count.Click += new System.EventHandler(this.count_Click);
             // 
             // listBox1
             // 
@@ -213,11 +214,22 @@
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 18;
             // 
+            // schti
+            // 
+            this.schti.Location = new System.Drawing.Point(382, 91);
+            this.schti.Name = "schti";
+            this.schti.Size = new System.Drawing.Size(75, 23);
+            this.schti.TabIndex = 19;
+            this.schti.Text = "Sch\'tis";
+            this.schti.UseVisualStyleBackColor = true;
+            this.schti.Click += new System.EventHandler(this.schti_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.schti);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -226,20 +238,19 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.count);
+            this.Controls.Add(this.buchstabieren);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.split);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.einlesen);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbx_name);
             this.Name = "Form1";
             this.Text = "Caesar-Dressing";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -250,15 +261,15 @@
 
         private System.Windows.Forms.TextBox tbx_name;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button einlesen;
+        private System.Windows.Forms.Button split;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buchstabieren;
+        private System.Windows.Forms.Button count;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
@@ -267,6 +278,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button schti;
     }
 }
 
