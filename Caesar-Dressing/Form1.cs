@@ -67,6 +67,7 @@ namespace Caesar_Dressing
         private void buchstabieren_Click(object sender, EventArgs e)
         {
             user.letters.AddRange(user.name);
+            listBox1.Items.Clear();
             foreach (char c in user.letters)
             {
                 listBox1.Items.Add(c);
@@ -74,7 +75,11 @@ namespace Caesar_Dressing
         }
         private void count_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            foreach (char c in user.letters)
+            {
+                listBox2.Items.Add(Convert.ToInt32(c));
+            }
         }
 
         private void schti_Click(object sender, EventArgs e)
@@ -109,6 +114,23 @@ namespace Caesar_Dressing
                 }
             }
             MessageBox.Show(output);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string result = "";
+            int iChi = Convert.ToInt32(numericUpDown1.Value);
+            int iChar = 0;
+            foreach (char c in user.letters)
+            {
+                iChar = Convert.ToInt32(c);
+                if (iChar >= 65 && iChar <= 90)
+                    iChar = (iChar - 65 + iChi) % 26 + 65;
+                if (iChar >= 97 && iChar <= 122)
+                    iChar = (iChar - 97 + iChi) % 26 + 97;
+                result += Convert.ToChar(iChar).ToString();
+            }
+            textBox4.Text = result;
         }
     }
 }

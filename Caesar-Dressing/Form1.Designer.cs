@@ -105,12 +105,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(550, 117);
+            this.button3.Location = new System.Drawing.Point(564, 369);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 8;
             this.button3.Text = "Verschlüsseln";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
@@ -201,7 +202,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(571, 322);
+            this.label7.Location = new System.Drawing.Point(578, 263);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 17;
@@ -209,8 +210,9 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(540, 349);
+            this.textBox4.Location = new System.Drawing.Point(548, 299);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 18;
             // 
